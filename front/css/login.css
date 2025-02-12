@@ -1,0 +1,164 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto, sans-serif;
+
+    background:
+        linear-gradient(150deg, #ecedee, transparent 30%),
+        linear-gradient(330deg, rgb(210, 206, 242), transparent 30%),
+        linear-gradient(225deg, #fff0be, #fbdce7, #e2fae1, powderblue);
+
+}
+
+.container {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alt-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 120px;
+
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.alt-container h1 {
+    margin: 0;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+h1.active {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.alt-container h1:hover {
+    cursor: pointer;
+}
+
+.sub-container {
+    display: none;
+
+    width: 100%;
+}
+
+.sub-container.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.sub-container input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.forgot {
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    margin-left: 9%;
+    margin-top: -10px;
+}
+
+.forgot:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.alt-container button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.alt-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.password-container {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#password {
+    width: 100%;
+}
+
+.show-password {
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 10px 10px;
+
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.show-password:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 5px 20px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
